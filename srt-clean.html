@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>srt-clean – Free Mac Cleaner and Windows PC Cleaner</title>
+<meta name="description" content="srt-clean is a free Mac cleaner and Windows PC cleaner. Free up disk space with one command: it safely removes app caches, temp and junk files, skips apps that are running and asks before deleting anything.">
+<meta name="author" content="Sawrav Biswas">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sawrav90ss.github.io/srt-clean">
+<meta property="og:type" content="website">
+<meta property="og:title" content="srt-clean – Free Mac Cleaner and Windows PC Cleaner">
+<meta property="og:description" content="Free up disk space on your Mac or Windows PC with one command, without losing anything you need.">
+<meta property="og:url" content="https://sawrav90ss.github.io/srt-clean">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="srt-clean – Free Mac Cleaner and Windows PC Cleaner">
+<meta name="twitter:description" content="Free up disk space on your Mac or Windows PC with one command, without losing anything you need.">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/348520141?s=64&v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "srt-clean",
+  "description": "Free Mac cleaner and Windows PC cleaner. Frees up disk space by safely removing app caches, temp and junk files. Skips apps that are running and asks before deleting anything.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "macOS, Windows 10, Windows 11",
+  "url": "https://sawrav90ss.github.io/srt-clean",
+  "downloadUrl": "https://github.com/sawrav90ss/srt-clean",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "Sawrav Biswas", "url": "https://sawrav90ss.github.io/" }
+}
+</script>
+<style>
+:root {
+  --bg: #ffffff; --surface: #f6f7f9; --text: #15171a; --muted: #5b6270;
+  --line: #e3e6eb; --accent: #2f6fed; --accent-text: #ffffff; --code-bg: #0f1216; --code-text: #e8edf3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1014; --surface: #161a20; --text: #eef1f5; --muted: #9aa3b2;
+    --line: #262c35; --accent: #5b8ff9; --accent-text: #0d1014; --code-bg: #07090c; --code-text: #e8edf3;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 72px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; }
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 18px 0 8px; letter-spacing: -0.02em; }
+.lead { color: var(--muted); font-size: 1.1rem; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 1rem; margin: 22px 0 6px; }
+p { margin: 0 0 12px; }
+.cmd { position: relative; background: var(--code-bg); color: var(--code-text); border-radius: 12px; padding: 14px 92px 14px 16px; overflow-x: auto; }
+.cmd code { font: 0.86rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; }
+.cmd button {
+  position: absolute; top: 9px; right: 9px; border: 0; border-radius: 8px; padding: 6px 12px;
+  background: var(--accent); color: var(--accent-text); font: inherit; font-size: 0.82rem; cursor: pointer;
+}
+ul { padding-left: 20px; }
+li { margin: 4px 0; }
+.btn {
+  display: inline-block; margin-top: 8px; padding: 9px 16px; border-radius: 999px;
+  background: var(--accent); color: var(--accent-text); font-weight: 600;
+}
+.btn:hover { text-decoration: none; opacity: 0.9; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← Sawrav Biswas</a>
+  <h1>srt-clean: free Mac cleaner and Windows PC cleaner</h1>
+  <p class="lead">Free up disk space with one command, without losing anything you need. Nothing to install.</p>
+  <a class="btn" href="https://github.com/sawrav90ss/srt-clean">View on GitHub</a>
+
+  <h2>How to use it</h2>
+  <h3>Mac</h3>
+  <p>Open <strong>Terminal</strong>, paste this line and press Enter:</p>
+  <div class="cmd"><code>curl -fsSL https://raw.githubusercontent.com/sawrav90ss/srt-clean/main/srt-clean.sh | bash</code><button type="button">Copy</button></div>
+
+  <h3>Windows</h3>
+  <p>Open <strong>PowerShell</strong> (press the Windows key, type PowerShell, press Enter), paste this line and press Enter:</p>
+  <div class="cmd"><code>irm https://raw.githubusercontent.com/sawrav90ss/srt-clean/main/srt-clean.ps1 | iex</code><button type="button">Copy</button></div>
+
+  <p>srt-clean shows you what it found and how big it is, then asks <code>Delete these? (y/n)</code>. Type <code>y</code> to clean or <code>n</code> to leave everything as it is.</p>
+
+  <h2>What it cleans</h2>
+  <ul>
+    <li>Cache files of every app: Chrome, Edge, Firefox, Discord, Slack, VS Code, Adobe and more</li>
+    <li>Temp and junk files, logs, crash reports</li>
+    <li>Video editing render caches: Premiere Pro, After Effects, Final Cut Pro, DaVinci Resolve</li>
+    <li>Graphics shader caches (NVIDIA, AMD, DirectX) on Windows</li>
+    <li>As administrator on Windows: Windows temp files and Windows Update leftovers</li>
+  </ul>
+
+  <h2>What it never touches</h2>
+  <ul>
+    <li>Your documents, photos, videos, music and projects</li>
+    <li>Passwords, logins, cookies, bookmarks and browser history</li>
+    <li>Apps that are running right now</li>
+    <li>The Trash and the Recycle Bin</li>
+  </ul>
+
+  <h2>Why use it</h2>
+  <p>srt-clean is a simple, free and open source alternative to paid cleaner apps. It only removes files that apps rebuild on their own, and it always asks first.</p>
+
+  <footer>Made by <a href="/">Sawrav Biswas</a> · <a href="https://github.com/sawrav90ss/srt-clean">GitHub</a> · MIT License</footer>
+</main>
+<script>
+document.querySelectorAll('.cmd button').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var text = button.parentElement.querySelector('code').textContent;
+    var done = function () { button.textContent = 'Copied'; setTimeout(function () { button.textContent = 'Copy'; }, 1500); };
+    try {
+      navigator.clipboard.writeText(text).then(done, function () {});
+    } catch (e) {}
+  });
+});
+</script>
+</body>
+</html>

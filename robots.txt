@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sawrav90ss.github.io/sitemap.xml
